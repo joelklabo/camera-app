@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6898EB4B1A76CFEE00501290 /* camera-icon-png-nTXB8LgMc.png in Resources */ = {isa = PBXBuildFile; fileRef = 6898EB4A1A76CFEE00501290 /* camera-icon-png-nTXB8LgMc.png */; };
 		68D5BD2C1A6F016E006E6A50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BD2B1A6F016E006E6A50 /* main.m */; };
 		68D5BD2F1A6F016E006E6A50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BD2E1A6F016E006E6A50 /* AppDelegate.m */; };
 		68D5BD321A6F016E006E6A50 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BD311A6F016E006E6A50 /* ViewController.m */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6898EB4A1A76CFEE00501290 /* camera-icon-png-nTXB8LgMc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-icon-png-nTXB8LgMc.png"; sourceTree = "<group>"; };
 		68D5BD261A6F016E006E6A50 /* CameraTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D5BD2A1A6F016E006E6A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68D5BD2B1A6F016E006E6A50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				68D5BD301A6F016E006E6A50 /* ViewController.h */,
 				68D5BD311A6F016E006E6A50 /* ViewController.m */,
 				68D5BD331A6F016E006E6A50 /* Main.storyboard */,
+				6898EB4A1A76CFEE00501290 /* camera-icon-png-nTXB8LgMc.png */,
 				68D5BD361A6F016E006E6A50 /* Images.xcassets */,
 				68D5BD381A6F016E006E6A50 /* LaunchScreen.xib */,
 				68D5BD291A6F016E006E6A50 /* Supporting Files */,
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68D5BD351A6F016E006E6A50 /* Main.storyboard in Resources */,
+				6898EB4B1A76CFEE00501290 /* camera-icon-png-nTXB8LgMc.png in Resources */,
 				68D5BD3A1A6F016E006E6A50 /* LaunchScreen.xib in Resources */,
 				68D5BD371A6F016E006E6A50 /* Images.xcassets in Resources */,
 			);
@@ -414,6 +418,7 @@
 				68D5BD4B1A6F016E006E6A50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		68D5BD4C1A6F016E006E6A50 /* Build configuration list for PBXNativeTarget "CameraTestTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +427,7 @@
 				68D5BD4E1A6F016E006E6A50 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

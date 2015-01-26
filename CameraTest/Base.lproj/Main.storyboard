@@ -39,9 +39,8 @@
                                     <action selector="choosePictureTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2kM-lr-TVz"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zEr-2S-SCu">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera-icon-png-nTXB8LgMc.png" translatesAutoresizingMaskIntoConstraints="NO" id="zEr-2S-SCu">
                                 <rect key="frame" x="16" y="490" width="101" height="90"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="90" id="Iit-y1-njx"/>
                                     <constraint firstAttribute="width" constant="101" id="Pd0-2b-nX6"/>
@@ -97,4 +96,7 @@
             <point key="canvasLocation" x="441" y="670"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="camera-icon-png-nTXB8LgMc.png" width="256" height="256"/>
+    </resources>
 </document>
