@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6221" systemVersion="14C99d" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6213"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,85 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pfU-SL-Cxn">
+                                <rect key="frame" x="16" y="20" width="568" height="456"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="456" id="VgC-m5-UND"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="VgC-m5-UND"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laF-9C-SV4">
+                                <rect key="frame" x="125" y="548" width="459" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Choose Picture">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="choosePictureTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2kM-lr-TVz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zEr-2S-SCu">
+                                <rect key="frame" x="16" y="490" width="101" height="90"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="Iit-y1-njx"/>
+                                    <constraint firstAttribute="width" constant="101" id="Pd0-2b-nX6"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X37-2z-lyt">
+                                <rect key="frame" x="125" y="490" width="459" height="50"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Take Picture">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="takePictureTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p22-hE-c59"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="zEr-2S-SCu" secondAttribute="bottom" constant="20" symbolic="YES" id="6D3-gL-CyX"/>
+                            <constraint firstItem="pfU-SL-Cxn" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8ev-HL-4Pu"/>
+                            <constraint firstItem="pfU-SL-Cxn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="AYy-hp-qaO"/>
+                            <constraint firstItem="zEr-2S-SCu" firstAttribute="top" secondItem="X37-2z-lyt" secondAttribute="top" id="DJl-kM-EmA"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="laF-9C-SV4" secondAttribute="bottom" constant="20" id="Eva-5X-utB"/>
+                            <constraint firstItem="X37-2z-lyt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="470" id="GZw-ZN-eny"/>
+                            <constraint firstItem="laF-9C-SV4" firstAttribute="top" secondItem="X37-2z-lyt" secondAttribute="bottom" constant="8" id="Oxp-bP-3SM"/>
+                            <constraint firstItem="laF-9C-SV4" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Umt-n2-0qM"/>
+                            <constraint firstItem="zEr-2S-SCu" firstAttribute="top" secondItem="pfU-SL-Cxn" secondAttribute="bottom" constant="14" id="V97-oC-5vy"/>
+                            <constraint firstItem="pfU-SL-Cxn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="aSr-Ka-Fcm"/>
+                            <constraint firstItem="pfU-SL-Cxn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="bGx-e7-4XO"/>
+                            <constraint firstItem="X37-2z-lyt" firstAttribute="top" secondItem="pfU-SL-Cxn" secondAttribute="bottom" constant="16" id="c1l-yJ-sjf"/>
+                            <constraint firstAttribute="centerX" secondItem="pfU-SL-Cxn" secondAttribute="centerX" id="jIB-Xw-GTt"/>
+                            <constraint firstAttribute="centerX" secondItem="X37-2z-lyt" secondAttribute="centerX" constant="-54.5" id="lQY-Mp-fKi"/>
+                            <constraint firstItem="pfU-SL-Cxn" firstAttribute="leading" secondItem="zEr-2S-SCu" secondAttribute="leading" id="mfj-S5-or4"/>
+                            <constraint firstItem="X37-2z-lyt" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="tTP-HF-W1E"/>
+                            <constraint firstAttribute="centerX" secondItem="laF-9C-SV4" secondAttribute="centerX" constant="-54.5" id="vYR-Zl-atM"/>
+                            <constraint firstItem="zEr-2S-SCu" firstAttribute="bottom" secondItem="laF-9C-SV4" secondAttribute="bottom" id="w1C-s7-aX3"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AYy-hp-qaO"/>
+                                <exclude reference="GZw-ZN-eny"/>
+                                <exclude reference="c1l-yJ-sjf"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="chosenImageView" destination="pfU-SL-Cxn" id="csX-r1-Jde"/>
+                        <outlet property="recentImageView" destination="zEr-2S-SCu" id="aE6-uE-REA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="441" y="670"/>
         </scene>
     </scenes>
 </document>
