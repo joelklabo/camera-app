@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		689211371A76F3A500FA9836 /* NoAccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 689211351A76F3A500FA9836 /* NoAccessViewController.m */; };
+		689211381A76F3A500FA9836 /* NoAccessViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 689211361A76F3A500FA9836 /* NoAccessViewController.xib */; };
 		6898EB4B1A76CFEE00501290 /* camera-icon-png-nTXB8LgMc.png in Resources */ = {isa = PBXBuildFile; fileRef = 6898EB4A1A76CFEE00501290 /* camera-icon-png-nTXB8LgMc.png */; };
 		68D5BD2C1A6F016E006E6A50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BD2B1A6F016E006E6A50 /* main.m */; };
 		68D5BD2F1A6F016E006E6A50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68D5BD2E1A6F016E006E6A50 /* AppDelegate.m */; };
@@ -28,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		689211341A76F3A500FA9836 /* NoAccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoAccessViewController.h; sourceTree = "<group>"; };
+		689211351A76F3A500FA9836 /* NoAccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoAccessViewController.m; sourceTree = "<group>"; };
+		689211361A76F3A500FA9836 /* NoAccessViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoAccessViewController.xib; sourceTree = "<group>"; };
 		6898EB4A1A76CFEE00501290 /* camera-icon-png-nTXB8LgMc.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-icon-png-nTXB8LgMc.png"; sourceTree = "<group>"; };
 		68D5BD261A6F016E006E6A50 /* CameraTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68D5BD2A1A6F016E006E6A50 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -88,6 +93,9 @@
 				68D5BD301A6F016E006E6A50 /* ViewController.h */,
 				68D5BD311A6F016E006E6A50 /* ViewController.m */,
 				68D5BD331A6F016E006E6A50 /* Main.storyboard */,
+				689211341A76F3A500FA9836 /* NoAccessViewController.h */,
+				689211351A76F3A500FA9836 /* NoAccessViewController.m */,
+				689211361A76F3A500FA9836 /* NoAccessViewController.xib */,
 				6898EB4A1A76CFEE00501290 /* camera-icon-png-nTXB8LgMc.png */,
 				68D5BD361A6F016E006E6A50 /* Images.xcassets */,
 				68D5BD381A6F016E006E6A50 /* LaunchScreen.xib */,
@@ -203,6 +211,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68D5BD351A6F016E006E6A50 /* Main.storyboard in Resources */,
+				689211381A76F3A500FA9836 /* NoAccessViewController.xib in Resources */,
 				6898EB4B1A76CFEE00501290 /* camera-icon-png-nTXB8LgMc.png in Resources */,
 				68D5BD3A1A6F016E006E6A50 /* LaunchScreen.xib in Resources */,
 				68D5BD371A6F016E006E6A50 /* Images.xcassets in Resources */,
@@ -224,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				68D5BD321A6F016E006E6A50 /* ViewController.m in Sources */,
+				689211371A76F3A500FA9836 /* NoAccessViewController.m in Sources */,
 				68D5BD2F1A6F016E006E6A50 /* AppDelegate.m in Sources */,
 				68D5BD2C1A6F016E006E6A50 /* main.m in Sources */,
 			);

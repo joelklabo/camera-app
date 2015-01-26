@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import <Photos/Photos.h>
+#import "NoAccessViewController.h"
 
 @interface ViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
@@ -35,7 +36,9 @@
                                                 
                                                 dispatch_async(dispatch_get_main_queue(), ^{
                                                     
-                                                    self.recentImageView.image = result;
+                                                    if (result) {
+                                                        self.recentImageView.image = result;
+                                                    }
                                                     
                                                 });
                                             }];
@@ -52,19 +55,36 @@
 {
     NSLog(@"takePictureTapped");
     
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
-    picker.delegate = self;
-    picker.allowsEditing = YES;
-    picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    AVAuthorizationStatus authStatus = [AVCaptureDevice authorizationStatusForMediaType:AVMediaTypeVideo];
     
-    [self presentViewController:picker animated:YES completion:nil];
+    if(authStatus == AVAuthorizationStatusAuthorized) {
+        
+        UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+        picker.delegate = self;
+        picker.allowsEditing = YES;
+        picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        
+        [self presentViewController:picker animated:YES completion:nil];
+        
+    } else {
+
+        NoAccessViewController *noAccessVC = [[NoAccessViewController alloc] initWithNibName:@"NoAccessViewController" bundle:nil];
+        [self presentViewController:noAccessVC  animated:YES completion:nil];
+        
+    }
+    
+    
+    
+    
 }
 
 - (IBAction)choosePictureTapped:(id)sender
 {
     NSLog(@"choosePictureTapped");
+
+    UIImagePickerController *picker;
     
-    UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+    picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
     picker.allowsEditing = YES;
     picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
